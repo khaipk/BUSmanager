@@ -4,7 +4,7 @@ public abstract class Bus {
 	private int code;
 	private String name;
 	private String licenseNumber;
-	public int money;
+	private int money;
 	
 	public abstract void setMoney();
 	public Bus() {
@@ -35,8 +35,12 @@ public abstract class Bus {
 	public void setLicenseNumber(String licenseNumber) {
 		this.licenseNumber = licenseNumber;
 	}
+	
 	public int getMoney() {
 		return money;
+	}
+	public void setMoney(int money) {
+		this.money = money;
 	}
 	@Override
 	public String toString() {

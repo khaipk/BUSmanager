@@ -3,10 +3,7 @@ package bus;
 public class UrbunBus extends Bus {
 	private int busNumber;
 	private int journeyNumber;
-	@Override
-	public void setMoney() {
-		this.money = this.getJourneyNumber()*100000;
-	}
+	
 	
 	public UrbunBus() {
 		super();
@@ -30,5 +27,14 @@ public class UrbunBus extends Bus {
 	public void setJourneyNumber(int journeyNumber) {
 		this.journeyNumber = journeyNumber;
 	}
+@Override
+public String toString() {
+	// TODO Auto-generated method stub
+	return super.toString()+"-"+this.getBusNumber()+"-"+this.getJourneyNumber();
+}
 
+@Override
+public void setMoney() {
+	
+}
 }

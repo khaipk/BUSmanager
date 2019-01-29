@@ -8,19 +8,21 @@ public class Manager {
 		menu();
 	}
 	static Scanner sc = new Scanner(System.in);
+	 static ManageBus bus = new ManageBus();
 	public static void menu() {
 		do {
+			System.out.println("0. Thoát");
 			System.out.println("1. Nhập xe vào danh sách");
 			System.out.println("2. Xuất danh sách xe");
-			System.out.println("3. Tính doanh thu xe nội thành");
-			System.out.println("4. Tính doanh thu xe ngoại thành");
+			System.out.println("-");
+			System.out.println("-");
 			int key = sc.nextInt();
 			switch (key) {
 			case 1:
-				ManageBus.addBus();
+				bus.addBus();
 				break;
 			case 2:
-				ManageBus.showBus();
+				bus.showBus();
 				break;
 			case 3:
 
